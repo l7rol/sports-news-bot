@@ -18,8 +18,8 @@ logger = logging.getLogger(__name__)
 
 # تحميل المتغيرات
 load_dotenv()
-TOKEN = os.getenv('BOT_TOKEN')
-CHAT_ID = os.getenv('CHAT_ID')  # معرف القناة أو المجموعة
+TOKEN = os.getenv('7575465316:AAHOYTEDDJLYMUw9a2C4p9PeFeHZIZQz-JY')
+CHAT_ID = os.getenv('@khanat1bot')  # معرف القناة أو المجموعة
 
 bot = Bot(token=TOKEN)
 
