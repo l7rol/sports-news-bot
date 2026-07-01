@@ -12,8 +12,8 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 logger = logging.getLogger(__name__)
 
 load_dotenv()
-TOKEN = os.getenv('bot_token')
-CHAT_ID = os.getenv('chat_id')
+TOKEN = os.getenv('BOT_TOKEN')  # ← تم التعديل هنا
+CHAT_ID = os.getenv('CHAT_ID')  # ← تم التعديل هنا
 
 # Thread-safe global flag
 is_live = False
@@ -94,7 +94,7 @@ async def stop_live(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 def main():
     if not TOKEN:
-        logger.error("No token found. Please set 'bot_token' in your environment variables.")
+        logger.error("No token found. Please set 'BOT_TOKEN' in your environment variables.")
         return
 
     # Build application with native support for JobQueue
