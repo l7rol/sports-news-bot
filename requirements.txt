@@ -1,5 +1,5 @@
-python-telegram-bot==20.7
+python-telegram-bot>=20.7
 requests
-beautifulsoup4
 feedparser
+beautifulsoup4
 python-dotenv
