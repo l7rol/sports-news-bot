@@ -204,20 +204,6 @@ async def send_news():
             
         except Exception as e:
             logger.error(f"خطأ في إرسال الخبر: {e}")
-
-# ==================== التشغيل المجدول ====================
-
-def job():
-    """الوظيفة المجدولة"""
-    import asyncio
-    asyncio.run(send_news())
-
-def main():
-    """الدالة الرئيسية"""
-    logger.info("بدء تشغيل البوت...")
-    
-    # جدولة إرسال الأخبار (كل ساعة مثلاً)
-    schedule.every(1).hours.do(job)
     
     # تشغيل مرة عند البدء
     import asyncio
